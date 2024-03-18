@@ -1,3 +1,9 @@
+This repository contains an example project for practicing test driven development. It was prepared for the INFORMATION AND COMPUTER SCIENCES department of the UNIVERSITY OF HAWAI‘I AT MĀNOA.
+
+This project is java based and uses [gradle](https://gradle.org/) as a build tool. To run the proejct locally, you need a copy of a java runtime environment (JRE). I created this project using java 17, but other versions _may_ work as well.
+
+You can run the tests of this project by doing `./gradlew test`.
+
 # Test driven development workshop
 
 ## Presenter
