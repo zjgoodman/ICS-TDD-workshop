@@ -179,6 +179,23 @@ Have you tried copy/pasting the code examples I've included in this document int
 
 ## How to set up and run tests
 ## Unit testing exercise
+Let's do a hands-on collaborative exercise. Let's write unit tests for this existing function.
+```java
+public static int factorial(int n) {
+  if (n < 0) {
+    throw new IllegalArgumentException("Input must be a non-negative number");
+  } else if (n == 0) {
+    return 1;
+  } else {
+    int result = 1;
+    for (int i = 1; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+  }
+}
+```
+The source code for this function can be found in [src/main/java/tdd_workshop/Factorial.java](src/main/java/tdd_workshop/Factorial.java).
 # Test driven development
 ## What is TDD
 ## Why TDD
