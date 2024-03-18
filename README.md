@@ -198,6 +198,32 @@ public static int factorial(int n) {
 The source code for this function can be found in [src/main/java/tdd_workshop/Factorial.java](src/main/java/tdd_workshop/Factorial.java).
 # Test driven development
 ## What is TDD
+I asked ChatGPT "what is test driven development" and am pretty satisfied with the answer it gave back:
+> Test-Driven Development (TDD) is a software development methodology where **tests are written before writing the bare minimum of code required for the test to be fulfilled**. The goal is to improve the quality of the code and design, ensure correctness and resilience against bugs.
+>
+> The TDD process comprises of the following steps, commonly known as **Red-Green-Refactor cycle**:
+> 
+> 1. Write a Test: Start by **writing a very small test for a function that does not yet exist**. At this point, the test will fail because there's no code implemented.
+> 2. Make the Test Pass: **Write the minimum amount of code necessary to make the test pass**.
+> 3. Refactor Code: Once the test is passing, **you can make changes without worrying about breaking anything**. The scope for refactoring can be improving the code readability, removing redundancies, etc. If anything is broken, it's instantly caught by running the failing test.
+> 
+> Repeat these steps for every new feature being developed. This way, TDD ensures each part of the functionality is well-tested, working correctly, and integrated continually, resulting in robust and high-quality software.
+
 ## Why TDD
+**TODO** cite some studies
+
+When asked "why should I use TDD," this is what chatGPT came up with a number of reasons, but the majority of those reasons were really just related to unit testing in general, rather than TDD specifically. It did however say this:
+> Better Software Design: TDD encourages modular, flexible, and maintainable code. The process of writing tests often leads to more modular design, which makes the application easier to understand, modify and maintain.
+
+Personally, I wrote unit tests for years in my career without employing TDD. I wrote production code, manually ran it to see if it worked, then went back after the fact and hacked my tests into place. It wasn't until 5 years into my career that I finally embraced TDD. And after using it for the past 3 years, I find myself very much in agreement with ChatGPT's claim.
+
+My personal experience with writing tests after the code is that **a test written after the code is frequently _less_ powerful than a test written before the code**. In my opinion, there's several possibile reasons for this:
+- the code might not have been written in a test-friendly way and so the developer has to add a **test-only entrypoint** to the code rather than using the entrypoint that the production code would use
+- if the code is tightly coupled with other modules, it's really hard to create meaningful tests without creating a **super complex test**
+- honest opinion: it's really hard to be disciplined enough to go back and write really good quality tests when the production code is complete. **It's MUCH easier to write a few quick tests and deliver the code**
+
+TLDR: writing meaningful tests after the code is hard. Both literally and behaviorally.
+
+I personally feel that the quality of my code drastically increased once I started using TDD. I also think that TDD helps to game-ify my coding experience. **TDD makes coding more fun for me**, and more clear what I should focus on when I'm in a sea of code.
 ## TDD Exercise
 # Closing
