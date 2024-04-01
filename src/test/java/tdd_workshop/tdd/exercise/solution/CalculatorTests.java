@@ -46,4 +46,6 @@ public class CalculatorTests {
         int actualResult = function.apply(input1, input2);
         Assertions.assertEquals(expectedResult, actualResult);
     }
+
+
 }
