@@ -1,6 +1,6 @@
-package tdd_workshop;
+package tdd_workshop.unit_testing.example;
 
-import static tdd_workshop.Add.add;
+import static tdd_workshop.unit_testing.example.Add.add;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;

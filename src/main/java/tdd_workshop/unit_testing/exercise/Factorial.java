@@ -1,4 +1,4 @@
-package tdd_workshop;
+package tdd_workshop.unit_testing.exercise;
 
 public class Factorial {
     public static int factorial(int n) {
