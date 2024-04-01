@@ -48,7 +48,7 @@ This is a pretty verbose response and maybe too dense for someone who is unfamil
 
 In essence, a program that checks the output of another program and determines if that output is "correct."
 
-Here is an example of a simple test that tests the behavior of an addition function:
+Here is an example of a simple test that tests the behavior of an addition function [(source code)](src/main/java/tdd_workshop/unit_testing/example/Add.java):
 ```java
 public int add(int number1, int number2){
     return number1 + number2;
@@ -226,4 +226,5 @@ TLDR: writing meaningful tests after the code is hard. Both literally and behavi
 
 I personally feel that the quality of my code drastically increased once I started using TDD. I also think that TDD helps to game-ify my coding experience. **TDD makes coding more fun for me**, and more clear what I should focus on when I'm in a sea of code.
 ## TDD Exercise
+Goal: 
 # Closing
