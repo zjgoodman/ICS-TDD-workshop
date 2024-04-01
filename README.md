@@ -241,5 +241,26 @@ TLDR: writing meaningful tests after the code is hard. Both literally and behavi
 
 I personally feel that the quality of my code drastically increased once I started using TDD. I also think that TDD helps to game-ify my coding experience. **TDD makes coding more fun for me**, and more clear what I should focus on when I'm in a sea of code.
 ## TDD Exercise
-Goal: 
+Let's do a hands-on TDD exercise.
+
+**Objective**: create a simple calculator function that reads a calculation string and returns the result of the expression
+
+**Requirements:**
+- support ADD/SUBTRACT/MULTIPLY/DIVIDE operations
+- support parenthesis
+- inputs should be whole numbers
+- outputs can be decimals
+- support negative numbers
+
+**Examples:**
+- `1+2` -> `3`
+- `1+2-1` -> `2`
+- `2-1` -> `1`
+- `2-2+1` -> `1`
+- `3-4*4/8+(2*2)` -> `-3`
+
+**Rules:**
+1. We are not allowed to write any production code unless it is to make a failing unit test pass.
+2. We are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
+3. We are not allowed to write any more production code than is sufficient to pass the one failing unit test.
 # Closing
