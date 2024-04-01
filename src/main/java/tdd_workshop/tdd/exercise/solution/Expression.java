@@ -25,7 +25,7 @@ public class Expression {
     }
 
     public int evaluate() {
-        Operation operation = null;
+        final Operation operation;
         if (this.operator == '+') {
             operation = Calculator::add;
         } else if (this.operator == '-') {
