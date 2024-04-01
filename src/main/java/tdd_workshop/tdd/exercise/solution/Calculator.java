@@ -1,7 +1,5 @@
 package tdd_workshop.tdd.exercise.solution;
 
-import java.util.function.BiFunction;
-
 public class Calculator {
     public static int add(int input1, int input2) {
         return input1 + input2;
