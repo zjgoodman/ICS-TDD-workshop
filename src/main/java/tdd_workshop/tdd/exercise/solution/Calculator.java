@@ -13,4 +13,8 @@ public class Calculator {
         return input1 * input2;
     }
 
+    public static int divide(int input1, int input2) {
+        return Math.floorDiv(input1, input2);
+    }
+
 }

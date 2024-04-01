@@ -31,6 +31,17 @@ public class CalculatorTests {
         runTest(Calculator::multiply, 2, 3, 6);
     }
 
+    @Test
+    public void testDivide() {
+        runTest(Calculator::divide, 1, 1, 1);
+        runTest(Calculator::divide, 1, 2, 0);
+        runTest(Calculator::divide, 1, 3, 0);
+        runTest(Calculator::divide, 1, 4, 0);
+        runTest(Calculator::divide, 4, 2, 2);
+        runTest(Calculator::divide, 4, 4, 1);
+        runTest(Calculator::divide, 7, 2, 3);
+    }
+
     private void runTest(BiFunction<Integer, Integer, Integer> function, int input1, int input2, int expectedResult) {
         int actualResult = function.apply(input1, input2);
         Assertions.assertEquals(expectedResult, actualResult);
