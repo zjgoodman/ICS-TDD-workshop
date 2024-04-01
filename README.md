@@ -247,20 +247,24 @@ Let's do a hands-on TDD exercise.
 
 **Requirements:**
 - support ADD/SUBTRACT/MULTIPLY/DIVIDE operations
-- support parenthesis
 - inputs and outputs should be whole numbers
   - for the case of division, round the result down
 - support negative numbers
+- for the sake of simplicity, only a simple binary calculation will be supported
+  - for example `1+1+1+1` will not be supported
 
 **Examples:**
 - `1+2` -> `3`
 - `1+2-1` -> `2`
 - `2-1` -> `1`
-- `2-2+1` -> `1`
-- `3-4*4/8+(2*2)` -> `-3`
 
 **Rules:**
 1. We are not allowed to write any production code unless it is to make a failing unit test pass.
 2. We are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
 3. We are not allowed to write any more production code than is sufficient to pass the one failing unit test.
+
+I implemented my "solution" version of the app in [src/main/java/tdd_workshop/tdd/exercise/solution](src/main/java/tdd_workshop/tdd/exercise/solution).
+
+**Stretch goal**: support nested expressions, such as `1+(2+3)`
+
 # Closing
