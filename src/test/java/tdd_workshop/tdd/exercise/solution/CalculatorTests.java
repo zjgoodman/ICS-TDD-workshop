@@ -22,6 +22,15 @@ public class CalculatorTests {
         runTest(Calculator::subtract, 10, 2, 8);
     }
 
+    @Test
+    public void testMultiply() {
+        runTest(Calculator::multiply, 1, 1, 1);
+        runTest(Calculator::multiply, 1, 2, 2);
+        runTest(Calculator::multiply, 0, 0, 0);
+        runTest(Calculator::multiply, 0, 1, 0);
+        runTest(Calculator::multiply, 2, 3, 6);
+    }
+
     private void runTest(BiFunction<Integer, Integer, Integer> function, int input1, int input2, int expectedResult) {
         int actualResult = function.apply(input1, input2);
         Assertions.assertEquals(expectedResult, actualResult);
