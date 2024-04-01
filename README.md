@@ -248,8 +248,8 @@ Let's do a hands-on TDD exercise.
 **Requirements:**
 - support ADD/SUBTRACT/MULTIPLY/DIVIDE operations
 - support parenthesis
-- inputs should be whole numbers
-- outputs can be decimals
+- inputs and outputs should be whole numbers
+  - for the case of division, round the result down
 - support negative numbers
 
 **Examples:**
