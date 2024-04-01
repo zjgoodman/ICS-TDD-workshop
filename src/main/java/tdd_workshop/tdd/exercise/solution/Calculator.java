@@ -14,7 +14,7 @@ public class Calculator {
     }
 
     public static int divide(int input1, int input2) {
-        return Math.floorDiv(input1, input2);
+        return (int) ((double) input1 / (double) input2);
     }
 
 }
