@@ -17,7 +17,7 @@ You can run the tests of this project by doing `./gradlew test`.
   - [Why unit test?](#why-unit-test)
     - [Safety net for refactoring](#safety-net-for-refactoring)
     - [Documentation](#documentation)
-  - [How to set up and run tests](#how-to-set-up-and-run-tests)
+  - [How to run tests](#how-to-run-tests)
   - [Unit testing exercise](#unit-testing-exercise)
 - [Test driven development](#test-driven-development)
   - [What is TDD](#what-is-tdd)
@@ -177,9 +177,18 @@ Revisiting the scenario of the teammate breaking your code, it's very likely tha
 
 Have you tried copy/pasting the code examples I've included in this document into actual java programs? They **_probably_** work. I tried to make sure they do. But they're ultimately just part of a text document. They might have once worked but as I made the presentation they may have become broken. The actual tests in this project that get compiled and run though, those are **guaranteed** to work, because they are actual runnable code.
 
-## How to set up and run tests
+## How to run tests
+When we're ready to run our tests, we can use either an IDE test runner, or the `gradle` CLI using the `./gradlew clean test` command. If our tests are successful, we should see an output like this:
+```
+❯ ./gradlew clean test
+
+BUILD SUCCESSFUL in 1s
+4 actionable tasks: 4 executed
+```
+Gradle will also generate a report for the test executions. It will store the report in `build/reports/tests/test/index.html`. The report will explain the tests that were run along with the results of each test.
+
 ## Unit testing exercise
-Let's do a hands-on collaborative exercise. Let's write unit tests for this existing function.
+Let's do a hands-on collaborative exercise. Let's write unit tests for [this existing function](src/main/java/tdd_workshop/unit_testing/exercise/Factorial.java).
 ```java
 public static int factorial(int n) {
   if (n < 0) {
@@ -196,6 +205,12 @@ public static int factorial(int n) {
 }
 ```
 The source code for this function can be found in [src/main/java/tdd_workshop/Factorial.java](src/main/java/tdd_workshop/Factorial.java).
+
+Let's add our unit tests to [src/test/java/tdd_workshop/unit_testing/exercise/FactorialTests.java](src/test/java/tdd_workshop/unit_testing/exercise/FactorialTests.java).
+
+A "solution" file is available in the `solution` subpackage [src/test/java/tdd_workshop/unit_testing/exercise/solution/FactorialTests.java](src/test/java/tdd_workshop/unit_testing/exercise/solution/FactorialTests.java).
+
+See [#how-to-run-tests](#how-to-run-tests) for info on how to run the tests.
 # Test driven development
 ## What is TDD
 I asked ChatGPT "what is test driven development" and am pretty satisfied with the answer it gave back:
