@@ -1,4 +1,4 @@
-package src.main.java.tdd_workshop;
+package tdd_workshop;
 
 public class Add {
     public static int add(int number1, int number2) {

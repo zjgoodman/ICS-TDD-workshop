@@ -1,4 +1,4 @@
-package src.main.java.tdd_workshop;
+package tdd_workshop;
 
 public class Factorial {
     public static int factorial(int n) {

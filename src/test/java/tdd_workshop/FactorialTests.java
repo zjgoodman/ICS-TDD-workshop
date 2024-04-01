@@ -1,6 +1,6 @@
-package src.test.java.tdd_workshop;
+package tdd_workshop;
 
-import static src.main.java.tdd_workshop.Factorial.factorial;
+import static tdd_workshop.Factorial.factorial;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.Test;
