@@ -2,7 +2,7 @@ package tdd_workshop.unit_testing.exercise.solution;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
-import static tdd_workshop.unit_testing.exercise.solution.Factorial.factorial;
+import static tdd_workshop.unit_testing.exercise.Factorial.factorial;
 
 import org.junit.jupiter.api.Test;
 
