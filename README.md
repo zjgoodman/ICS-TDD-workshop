@@ -1,12 +1,18 @@
 # Test driven development workshop
 This repository contains an example project for practicing test driven development. It was prepared for the INFORMATION AND COMPUTER SCIENCES department of the UNIVERSITY OF HAWAI‘I AT MĀNOA.
 
+Github pages site: https://zjgoodman.github.io/ICS-TDD-workshop/
+
+Source code repository: https://github.com/zjgoodman/ICS-TDD-workshop
+
+## Project info
 This project is java based and uses [gradle](https://gradle.org/) as a build tool. I used gradle `8.6`. To run the proejct locally, you need a copy of a java runtime environment (JRE). I created this project using java 17, but other versions _may_ work as well.
 
 You can run the tests of this project by doing `./gradlew test`.
 
 # Contents
 - [Test driven development workshop](#test-driven-development-workshop)
+  - [Project info](#project-info)
 - [Contents](#contents)
 - [Unit testing](#unit-testing)
   - [What is unit testing?](#what-is-unit-testing)
