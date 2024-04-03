@@ -349,3 +349,4 @@ BUILD SUCCESSFUL in 845ms
 ```
 
 # Closing
+Congratulations on completing the TDD exercise! I hope you enjoyed the project and got a good idea of the TDD process. Good luck on your coding journey!
