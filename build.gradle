@@ -25,5 +25,5 @@ test {
 }
 
 application {
-    mainClassName = 'tdd_workshop.tdd.exercise.solution.Main'
+    mainClass = 'tdd_workshop.tdd.exercise.solution.Main'
 }
