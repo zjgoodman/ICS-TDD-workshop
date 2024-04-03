@@ -238,8 +238,6 @@ I asked ChatGPT "what is test driven development" and am pretty satisfied with t
 > Repeat these steps for every new feature being developed. This way, TDD ensures each part of the functionality is well-tested, working correctly, and integrated continually, resulting in robust and high-quality software.
 
 ## Why TDD
-**TODO** cite some studies
-
 When asked "why should I use TDD," this is what chatGPT came up with a number of reasons, but the majority of those reasons were really just related to unit testing in general, rather than TDD specifically. It did however say this:
 > Better Software Design: TDD encourages modular, flexible, and maintainable code. The process of writing tests often leads to more modular design, which makes the application easier to understand, modify and maintain.
 
