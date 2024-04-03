@@ -27,6 +27,7 @@ You can run the tests of this project by doing `./gradlew test`.
     - [Requirements](#requirements)
     - [Example input/output](#example-inputoutput)
     - [Coding rules](#coding-rules)
+    - [Implementation suggestions](#implementation-suggestions)
     - [Example solution](#example-solution)
       - [Running from command line](#running-from-command-line)
 - [Closing](#closing)
@@ -276,6 +277,49 @@ Taken directly from [Uncle Bob](http://butunclebob.com/ArticleS.UncleBob.TheThre
 3. We are not allowed to write any more production code than is sufficient to pass the one failing unit test.
 
 Once tests are passing, it's ok to refactor code as long as we are not changing behavior.
+
+### Implementation suggestions
+If it's your first time doing TDD, I would suggest implementing the code in the following order:
+1. basic arithmetic operation functions
+   1. add
+   2. subtract
+   3. multiply
+   4. divide
+2. expression parsing
+3. command line run harness
+
+Each time you complete a piece of functionality, I would recommend committing your work to source control. This is exactly what I did when I implemented this project on my own, as seen in my commit history.
+```
+commit 1e3ff8397669e1d740b6c69ae71fdfe41b9681ac
+Author: Zach Goodman <zachary.goodman@anthem.com>
+Date:   Mon Apr 1 10:50:48 2024 -1000
+
+    refactor divide
+
+commit a2cfbbe10049b3dd4e42b2e02ee609b0d88f5e06
+Author: Zach Goodman <zachary.goodman@anthem.com>
+Date:   Mon Apr 1 10:42:52 2024 -1000
+
+    division
+
+commit c6b38d84692873234730d6ab65ffcd66b347dab0
+Author: Zach Goodman <zachary.goodman@anthem.com>
+Date:   Mon Apr 1 10:31:38 2024 -1000
+
+    multiply
+
+commit 83e93baf9c4b848cb24ba91adf0075d7cfd789df
+Author: Zach Goodman <zachary.goodman@anthem.com>
+Date:   Mon Apr 1 10:29:21 2024 -1000
+
+    subtract
+
+commit 0f761d0682e7671426e7ac0b0a7a1d96d3b40386
+Author: Zach Goodman <zachary.goodman@anthem.com>
+Date:   Mon Apr 1 10:27:19 2024 -1000
+
+    add
+```
 
 ### Example solution
 I implemented my "solution" version of the app in [src/main/java/tdd_workshop/tdd/exercise/solution](src/main/java/tdd_workshop/tdd/exercise/solution).
