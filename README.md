@@ -23,6 +23,12 @@ You can run the tests of this project by doing `./gradlew test`.
   - [What is TDD](#what-is-tdd)
   - [Why TDD](#why-tdd)
   - [TDD Exercise](#tdd-exercise)
+    - [Objective](#objective)
+    - [Requirements](#requirements)
+    - [Example input/output](#example-inputoutput)
+    - [Coding rules](#coding-rules)
+    - [Example solution](#example-solution)
+      - [Running from command line](#running-from-command-line)
 - [Closing](#closing)
 
 # Unit testing
@@ -243,28 +249,59 @@ I personally feel that the quality of my code drastically increased once I start
 ## TDD Exercise
 Let's do a hands-on TDD exercise.
 
-**Objective**: create a simple calculator function that reads a calculation string and returns the result of the expression
+### Objective
+Create a simple calculator function that reads a calculation string and returns the result of the expression.
 
-**Requirements:**
+**Stretch goal**: support nested expressions, such as `1+(2+3)`
+
+### Requirements
 - support ADD/SUBTRACT/MULTIPLY/DIVIDE operations
 - inputs and outputs should be whole numbers
   - for the case of division, round the result down
-- support negative numbers
+- support negative number results. negative number inputs do not need to be supported
+  - for example `1-2` should return `-1` but `-1+1` does not need to be supported
 - for the sake of simplicity, only a simple binary calculation will be supported
   - for example `1+1+1+1` will not be supported
+    - either truncate the expression (`1+1+1` -> `1+1`) or throw an error
 
-**Examples:**
+### Example input/output
 - `1+2` -> `3`
 - `1+2-1` -> `2`
 - `2-1` -> `1`
 
-**Rules:**
+### Coding rules
+Taken directly from [Uncle Bob](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd):
 1. We are not allowed to write any production code unless it is to make a failing unit test pass.
 2. We are not allowed to write any more of a unit test than is sufficient to fail; and compilation failures are failures.
 3. We are not allowed to write any more production code than is sufficient to pass the one failing unit test.
 
+Once tests are passing, it's ok to refactor code as long as we are not changing behavior.
+
+### Example solution
 I implemented my "solution" version of the app in [src/main/java/tdd_workshop/tdd/exercise/solution](src/main/java/tdd_workshop/tdd/exercise/solution).
 
-**Stretch goal**: support nested expressions, such as `1+(2+3)`
+#### Running from command line
+I added a [Main]() class that allows us to run the application from the command line using `./gradlew run --args "1 + 1"`.
+
+Example `1 + 1`:
+```
+❯ ./gradlew run --args "1 + 1"
+
+> Task :run
+2
+
+BUILD SUCCESSFUL in 689ms
+2 actionable tasks: 1 executed, 1 up-to-date
+```
+Example `5 * 4`:
+```
+❯ ./gradlew run --args "5 * 4"
+
+> Task :run
+20
+
+BUILD SUCCESSFUL in 845ms
+2 actionable tasks: 1 executed, 1 up-to-date
+```
 
 # Closing
