@@ -275,8 +275,6 @@ Let's do a hands-on TDD exercise.
 ### Objective
 Create a simple calculator function that reads a calculation string and returns the result of the expression.
 
-**Stretch goal**: support nested expressions, such as `1+(2+3)`
-
 ### Requirements
 - support ADD/SUBTRACT/MULTIPLY/DIVIDE operations
 - inputs and outputs should be whole numbers
