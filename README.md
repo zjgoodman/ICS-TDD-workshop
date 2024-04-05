@@ -282,7 +282,7 @@ Create a simple calculator function that reads a calculation string and returns 
 - support negative number results. negative number inputs do not need to be supported
   - for example `1-2` should return `-1` but `-1+1` does not need to be supported
 - for the sake of simplicity, only a simple binary calculation will be supported
-  - for example `1+1+1+1` will not be supported
+  - for example `1+1+1` will not be supported
     - either truncate the expression (`1+1+1` -> `1+1`) or throw an error
 
 ### Example input/output
