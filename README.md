@@ -287,7 +287,8 @@ Create a simple calculator function that reads a calculation string and returns 
 
 ### Example input/output
 - `1+2` -> `3`
-- `1+2-1` -> `2`
+- `10*12` -> `120`
+- `7/2` -> `3` (rounded down from 3.5)
 - `2-1` -> `1`
 
 ### Coding rules
