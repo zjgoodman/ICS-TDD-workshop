@@ -5,6 +5,13 @@ Github pages site: https://zjgoodman.github.io/ICS-TDD-workshop/
 
 Source code repository: https://github.com/zjgoodman/ICS-TDD-workshop
 
+## In-person presentation
+My name is Zach Goodman. I'm a software engineer. I've been in the industry since 2016 and I'm very excited to share this test driven development project.
+
+This will be a collaborative session! I am relying on participation from audience volunteers. If nobody volunteers, this session will not be fun.
+
+Feel free to follow along on your personal computer, but I won't be stopping to help troubleshoot any issues you encounter. For the most benefit, I would recommend you put your computer away and instead participate in the collaborative session we'll be doing together.
+
 ## Project info
 This project is java based and uses [gradle](https://gradle.org/) as a build tool. I used gradle `8.6`. To run the proejct locally, you need a copy of a java runtime environment (JRE). I created this project using java 17, but other versions _may_ work as well.
 
@@ -12,6 +19,7 @@ You can run the tests of this project by doing `./gradlew test`.
 
 # Contents
 - [Test driven development workshop](#test-driven-development-workshop)
+  - [In-person presentation](#in-person-presentation)
   - [Project info](#project-info)
 - [Contents](#contents)
 - [Unit testing](#unit-testing)
