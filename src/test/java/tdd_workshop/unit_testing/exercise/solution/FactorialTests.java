@@ -1,10 +1,14 @@
 package tdd_workshop.unit_testing.exercise.solution;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
 import static tdd_workshop.unit_testing.exercise.Factorial.factorial;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.MethodSource;
+import tdd_workshop.TestCase;
+
+import java.util.stream.Stream;
 
 public class FactorialTests {
     @Test
@@ -12,22 +16,28 @@ public class FactorialTests {
         int input = -5;
         try {
             factorial(input);
-            fail("Expected IllegalArgumentException");
+            Assertions.fail("Expected IllegalArgumentException");
         } catch (IllegalArgumentException e) {
             // this is expected
         }
     }
 
-    @Test
-    public void testGreaterThanOne() {
-        int input = 5;
-        int expectedResult = 120;
+    @ParameterizedTest
+    @MethodSource
+    public void testFactorial(TestCase<Integer,Integer> testCase){
+        int input = testCase.input;
+        int expectedResult = testCase.expectedOutput;
         int actualResult = factorial(input);
-        assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult,actualResult);
     }
-
-    @Test
-    public void testZero() {
-        assertEquals(1, factorial(0));
+    private static Stream<TestCase<Integer,Integer>> testFactorial() {
+        return Stream.of(
+                new TestCase<>(0, 1),
+                new TestCase<>(1, 1),
+                new TestCase<>(2, 2),
+                new TestCase<>(3, 6),
+                new TestCase<>(4, 24),
+                new TestCase<>(5, 120)
+        );
     }
 }
