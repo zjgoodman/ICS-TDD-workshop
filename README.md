@@ -273,7 +273,7 @@ I personally feel that the quality of my code drastically increased once I start
 Let's do a hands-on TDD exercise.
 
 ### Objective
-Create a simple calculator function that reads a calculation string and returns the result of the expression.
+Create a simple calculator app that reads a calculation string and returns the result of the expression.
 
 ### Requirements
 - support ADD/SUBTRACT/MULTIPLY/DIVIDE operations
